@@ -1678,7 +1678,7 @@ main{
                 
                 }
 /* Ipad Mini Vertical */
-@media (min-width: 720px) and {
+@media (max-width: 720px) and {
     .nav{
         display: flex;
         justify-content: center;
@@ -1809,7 +1809,7 @@ main{
             cursor: pointer;    
         }
     }
-    @media (min-width: 1024px) {
+    @media (max-width: 1024px) {
         .nav{
             display: flex;
             justify-content: center;
