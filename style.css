@@ -199,7 +199,7 @@ main{
     transform: scale(1.2);
     cursor: pointer;    
 }
-@media (max-width: 370px){
+@media (min-width: 330px){
 .nav{
     display: flex;
     justify-content: center;
