@@ -199,7 +199,7 @@ main{
     transform: scale(1.2);
     cursor: pointer;    
 }
-@media (width: 375px) and (height: 667px) {
+@media (min-width: 375px) and (min-height: 667px) {
 .nav{
     display: flex;
     justify-content: center;
@@ -329,7 +329,7 @@ main{
         cursor: pointer;    
     }
 }
-@media (width: 667px) and (height: 375px) {
+@media (min-width: 667px) and (min- height: 375px) {
     .nav{
         display: flex;
         justify-content: center;
@@ -400,7 +400,7 @@ main{
 }
 
 }
-@media (width: 414px) and (height: 896px) {
+@media (min-width: 414px) and (min-height: 896px) {
     .nav{
         display: grid;
         justify-items: center;
@@ -455,7 +455,7 @@ main{
         height: auto;
     }
 }
-@media (width: 896px) and (height: 414px) {
+@media (min-width: 896px) and (min-height: 414px) {
     .nav{
         display: flex;
         justify-content: center;
@@ -527,7 +527,7 @@ main{
 }
 
 }
-@media (width: 390px) and (height: 844px) {
+@media (min-width: 390px) and (min-height: 844px) {
     .nav{
         display: grid;
         justify-items: center;
@@ -582,7 +582,7 @@ main{
         height: auto;
     }
 }
-@media (width: 844px) and (height: 390px) {
+@media (min-width: 844px) and (min-height: 390px) {
     .nav{
         display: flex;
         justify-content: center;
@@ -653,7 +653,7 @@ main{
 }
 
 }
-@media (width: 393px) and (height: 851px) {
+@media (min-width: 393px) and (min-height: 851px) {
     .nav{
         display: flex;
         justify-content: center;
@@ -783,7 +783,7 @@ main{
             cursor: pointer;    
         }
     }
-    @media (width: 851px) and (height: 393px) {
+    @media (min-width: 851px) and (min-height: 393px) {
         .nav{
             display: flex;
             justify-content: center;
@@ -854,7 +854,7 @@ main{
     }
     
     }
-    @media (width: 360px) and (height: 740px) {
+    @media (min-width: 360px) and (min-height: 740px) {
         .nav{
             display: flex;
             justify-content: center;
@@ -984,7 +984,7 @@ main{
                 cursor: pointer;    
             }
         }
-        @media (width: 740px) and (height: 360px) {
+        @media (min-width: 740px) and (min-height: 360px) {
             .nav{
                 display: flex;
                 justify-content: center;
@@ -1056,7 +1056,7 @@ main{
         }
         
         }
-        @media (width: 360px) and (height: 740px) {
+        @media (min-width: 360px) and (min-height: 740px) {
         .nav{
             display: flex;
             justify-content: center;
@@ -1186,7 +1186,7 @@ main{
                 cursor: pointer;    
             }
         }
-        @media (width: 740px) and (height: 360px) {
+        @media (min-width: 740px) and (min-height: 360px) {
             .nav{
                 display: flex;
                 justify-content: center;
@@ -1258,7 +1258,7 @@ main{
         }
         
         }
-        @media (width: 412px) and (height: 915px) {
+        @media (min-width: 412px) and (min-height: 915px) {
             .nav{
                 display: flex;
                 justify-content: center;
@@ -1388,7 +1388,7 @@ main{
                     cursor: pointer;    
                 }
             }
-            @media (width: 915px) and (height: 412px) {
+            @media (min-width: 915px) and (min-height: 412px) {
                 .nav{
                     display: flex;
                     justify-content: center;
@@ -1462,7 +1462,7 @@ main{
             }
             
             }
-            @media (width: 820px) and (height: 1180px) {
+            @media (min-width: 820px) and (min-height: 1180px) {
                 .nav{
                     display: flex;
                     justify-content: center;
@@ -1592,7 +1592,7 @@ main{
                         cursor: pointer;    
                     }
                 }
-                @media (width: 1180px) and (height: 820px) {
+                @media (min-width: 1180px) and (min-height: 820px) {
                     .nav{
                         display: flex;
                         justify-content: center;
@@ -1678,7 +1678,7 @@ main{
                 
                 }
 /* Ipad Mini Vertical */
-@media (width: 768px) and (height: 1024px) {
+@media (min-width: 768px) and (min-height: 1024px) {
     .nav{
         display: flex;
         justify-content: center;
@@ -1809,7 +1809,7 @@ main{
             cursor: pointer;    
         }
     }
-    @media (width: 1024px) and (height: 768px) {
+    @media (min-width: 1024px) and (min-height: 768px) {
         .nav{
             display: flex;
             justify-content: center;
@@ -1895,7 +1895,7 @@ main{
     
     }
     /* surface pro 7 */
-    @media (width: 912px) and (height: 1368px) {
+    @media (min-width: 912px) and (min-height: 1368px) {
         .nav{
             display: flex;
             justify-content: center;
@@ -2026,7 +2026,7 @@ main{
                 cursor: pointer;    
             }
         }
-        @media (width: 1368px) and (height: 912px) {
+        @media (min-width: 1368px) and (min-height: 912px) {
             .nav{
                 display: flex;
                 justify-content: center;
