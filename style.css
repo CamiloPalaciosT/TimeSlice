@@ -1,0 +1,453 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #a2e19e;
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2324f22a' fill-opacity='0.4'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    width: 100%;
+    height: 100%;
+}
+.header{
+    display: grid;
+    place-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0% 0% 0% 0%;
+}
+.logo{
+    width: 45%;
+    height: auto;
+    margin-bottom: 0;
+    align-items: center;
+}
+main{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    height: 25em;
+}
+#app{
+    background: rgba(255, 255, 255, 0.3);
+    display: flexbox;
+    width: 60%;
+    height: 100%;
+    margin: 0% 0% 0% 0%;
+}
+#time{
+    align-self: flex-start;
+    margin-bottom: auto;
+}
+#value{
+    font-family: 'Courgette', cursive;
+    font-size: 6em;
+    text-align: center;
+    width: 100%;
+    height: 30%;
+    top: 20%;
+}
+#taskName{
+    font-family: 'Courgette', cursive;
+    font-size: 2em;
+    text-align: center;
+    width: 100%;
+    height: 30%;
+    top: 20%;
+    overflow-wrap: break-word;
+}
+#itTask{
+    border-radius: 10px;
+    width: 60%;
+    height: 3em;
+    margin: 0% 20% 0% 20%;
+    border: none;
+    background: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+}
+#minPomodoro{
+    margin-top: 2%;
+    margin-bottom: 3.7%;
+    border-radius: 10px;
+    border: none;
+    height: 5rem;
+    width: 8rem;
+    font-size: 5rem;
+    text-align: center;
+}
+#minPomodoro[value="25"] {
+    color: lightslategray;
+    font-family: 'Dancing Script', cursive
+  }
+#minBreak{
+    margin-top: 2%;
+    margin-bottom: 3.7%;
+    border-radius: 10px;
+    border: none;
+    height: 7em;
+    height: 5rem;
+    width: 8rem;
+    font-size: 5rem;
+    text-align: center;
+}
+#minBreak[value="5"] {
+    color: lightslategray;
+    font-family: 'Dancing Script', cursive
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+.cuadrosBtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 0% 0% 0%;
+}
+.descripcion{
+    margin-bottom: 0%;
+}
+.botonesDos{
+    padding-top: 3%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#bAdd{
+    height: 3.5em;
+    width: 12em;
+    border: none;
+    border-radius: 10px;
+    background: #5ae350;
+    color: azure;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    box-shadow: 10px 10px 10px black;
+}
+#bAdd:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+#stop{
+    height: 3.5em;
+    width: 12em;
+    border: #5ae350;
+    border-width: 3px;
+    border-radius: 10px;
+    background: azure;
+    color: #5ae350;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    box-shadow: 10px 10px 10px black;
+}
+#stop:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.misTareas{
+    background: rgb(90, 227, 80, 0.7);
+    height: 100%;
+    max-width: 20%;
+    overflow-wrap: break-word;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px black;
+    overflow-x: auto;
+    font-size: 1.5em;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    justify-content: center;
+    flex-grow: 0;
+}
+.misTareas::-webkit-scrollbar {
+    width: 10px; 
+}
+  
+  .misTareas::-webkit-scrollbar-track {
+    background-color: #f1f1f1; 
+  }
+  
+  .misTareas::-webkit-scrollbar-thumb {
+    background-color: black; 
+    border-radius: 5px; 
+  }
+  
+  .misTareas::-webkit-scrollbar-thumb:hover {
+    background-color: black;
+  }
+  .start-button{
+    height: 10%;
+    width: 80%;
+    border: #5ae350;
+    border-width: 3px;
+    border-radius: 10px;
+    background: azure;
+    color: #5ae350;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    box-shadow: 5px 5px 5px black;
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+  }
+  .task:hover{
+    background: #3fa038;
+    transform: scale(1.2);
+    cursor: pointer;    
+}
+@media (width: 375px) {
+.nav{
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    width: 45%;
+    height: auto;
+    margin-bottom: 0;
+    align-items: center;
+}
+    main{
+        gap: 0px;
+    }
+    #app{
+        width: 80%;
+        display: grid;
+        justify-content: center;
+        height: 83%;
+        border-radius: 10px;
+    }
+    #value{
+        font-size: 4em;
+    }
+    #taskName{
+        font-family: 'Courgette', cursive;
+        font-size: 2em;
+        width: 100%;
+        height: 30%;
+        top: 20%;
+        overflow-wrap: break-word;
+    }
+    #itTask{
+        border-radius: 10px;
+        width: 60%;
+        height: 2em;
+        border: none;
+        background: #FFFFFF;
+        font-family: 'Montserrat', sans-serif;
+        margin-left: 21%;
+    }
+    #minPomodoro{
+        margin-top: 2%;
+        margin-bottom: 3.7%;
+        border-radius: 10px;
+        border: none;
+        height: 40%;
+        width: 54%;
+        font-size: 2.5rem;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        text-align: center;
+    }
+    #minPomodoro[value="25"] {
+        color: lightslategray;
+        font-family: 'Dancing Script', cursive
+      }
+    #minBreak{
+        margin-top: 2%;
+        margin-bottom: 3.7%;
+        border-radius: 10px;
+        border: none;
+        height: 7em;
+        height: 40%;
+        width: 54%;
+        font-size: 2.5rem;
+        text-align: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 5%;
+        padding-right: 6%;
+    }
+    #minBreak[value="5"] {
+        color: lightslategray;
+        font-family: 'Dancing Script', cursive
+    }
+    .botones{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        margin-top: 4%;
+    }
+    .cuadrosBtn{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 1% 0% 0% 0%;
+        max-width: 25%;
+    }
+    .descripcion{
+        margin-bottom: 0%;
+        font-size: 1em;
+        text-align: center;
+    }
+    .botonesDos{
+        transform: scale(0.66);
+    }
+    .misTareas{
+        position: absolute;
+        top: 71%;
+        max-width: 80%;
+        bottom: 3%;
+        height: auto;
+    }
+    .misTareas::-webkit-scrollbar {
+        width: 10px; 
+    }
+      
+      .misTareas::-webkit-scrollbar-track {
+        background-color: #f1f1f1; 
+      }
+      
+      .misTareas::-webkit-scrollbar-thumb {
+        background-color: black; 
+        border-radius: 5px; 
+      }
+      
+      .misTareas::-webkit-scrollbar-thumb:hover {
+        background-color: black;
+      }
+      .start-button{
+        min-width: 12em;
+      }
+      .task:hover{
+        background: #3fa038;
+        transform: scale(1.2);
+        cursor: pointer;    
+    }
+}
+@media (width: 667px) {
+    .logo{
+        width: 25%;
+    }
+    #app{
+        height: 65%;
+        width: 63%;
+    }
+    #value{
+        font-size: 300%;
+    }
+    #itTask{
+        border-radius: 10px;
+        width: 80%;
+        height: 2em;
+        border: none;
+        background: #FFFFFF;
+        font-family: 'Montserrat', sans-serif;
+        margin-left: 11%;
+    }
+    #taskName{
+        font-size: 125%;
+        margin-top: -1%;
+    }
+    #minPomodoro{
+        width: 50%;
+        height: 50%;
+        font-size: 213%;
+    }
+    #minBreak{
+        width: 50%;
+        height: 50%;
+        font-size: 213%;
+    }
+    .botones{
+        gap: 0;
+        width: 83%;
+        margin-left: 9%;
+    }
+    .descripcion{
+        font-size: 70%;
+        text-align: center;
+        margin-bottom: 10%;
+        margin-top: 4%;
+    }
+    .botonesDos{
+        transform: scale(0.6);
+        margin-top: -5%;
+    }
+    .misTareas{
+    font-size: 100%;
+    position: inherit;
+    margin-left: 3%;
+    margin-right: 3%;
+    height: auto;
+    margin-bottom: 21%;
+    }
+.start-button{
+    font-size: 65%;
+}
+.title{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+}
+
+}
+@media (height: 896px) {
+    .nav{
+        display: grid;
+        justify-items: center;
+    }
+    #app{
+        width: 82%;
+        height: 72%;
+        border-radius: 10px;
+    }
+    #value{
+        font-size: 320%;
+    }
+    #taskName{
+        font-size: 120%;
+    }
+    #itTask{
+        width: 84%;
+        margin-left: 8%;
+    }
+    .botones{
+        gap: 0;
+    }
+    .cuadrosBtn{
+        width: 40%;
+    }
+    #minPomodoro{
+        width: 50%;
+        height: 67%;
+    }
+    #minPomodoro[value="25"]{
+        font-size: 300%;
+    }
+    #minBreak{
+        width: 50%;
+        height: 67%;
+    }
+    #minBreak[value="5"]{
+        font-size: 300%;
+    }
+    .descripcion{
+        font-size: 70%;
+        text-align: center;
+    }
+    .botonesDos{
+        transform: scale(0.9);
+    }
+    .misTareas{
+        min-width: 81%;
+        position: absolute;
+        top: 50%;
+        bottom: 4%;
+        height: auto;
+    }
+}
